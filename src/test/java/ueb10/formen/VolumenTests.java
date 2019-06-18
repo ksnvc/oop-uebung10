@@ -57,7 +57,7 @@ class VolumenTests {
 		assertFalse(Modifier.isAbstract(Zylinder.class.getModifiers()));
 		assertThrows(NoSuchMethodException.class, () -> Zylinder.class.getDeclaredMethod("volumen"));
 
-		assertEquals(ZylindrischesRohr.class.getSuperclass(), Volumen.class);
+		assertEquals(ZylindrischesRohr.class.getSuperclass(), Zylinder.class);
 		assertFalse(Modifier.isAbstract(ZylindrischesRohr.class.getModifiers()));
 		assertThrows(NoSuchMethodException.class, () -> ZylindrischesRohr.class.getDeclaredMethod("volumen"));
 	}
